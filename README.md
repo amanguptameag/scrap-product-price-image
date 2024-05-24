@@ -2,6 +2,7 @@
 Step to run this code
 ```
 pip install -r requirements.txt
+uvicorn main:app --reload
 ```
 For testing use this curl
 ```
