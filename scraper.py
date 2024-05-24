@@ -39,7 +39,7 @@ class Scraper:
             
             title = title_element.text.strip() if title_element else ""
             # pdb.set_trace()
-            price = float(price_element.text.strip()[1:]) if price_element else ""
+            price = float(price_element.text.strip()[1:]) if price_element else 0.0
             image_url = image_element["data-lazy-src"] if image_element else ""
 
             products.append({
