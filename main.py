@@ -20,4 +20,4 @@ def scrape(pages: int = 1, proxy: str = None, credentials: HTTPAuthorizationCred
     
     scraper = Scraper(pages=pages, proxy=proxy)
     result = scraper.run()
-    return {"scraped_data": result}
+    return {"product_count": len(result), "scraped_data": result}
